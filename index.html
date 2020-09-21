@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Avoid offensive : list of offensive words</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">     
+      <a class="navbar-brand" href="#"><img src="./logo.png" height="60px" width="60px"/></a>     
+    </div>
+    <div style="text-align: center">
+        <h1 style="color:white">Welcome to avoid offensive: A VS Code extension</h1>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav"></div>
+    <div class="col-sm-8 text-left"> 
+      <h3>List of offensive words and replacements</h3>
+      <p><b>Steps for setting up offensive-list.json</b></p>
+      <p>Step 1: Create 'offensive-list.json' at root of your project. </p>
+      <p>Step 2: Copy and paste below json code into the 'offensive-list.json' or download it <a href="./offensive-list.json" download>here</a></p>
+      <p>Step 3: You can add your own offensive word list and their replacements into the 'offensive-list.json' </p>
+      <div style="border: 1px solid black">
+        <a class="btn btn-success right" 
+            style="margin-right: 1rem;
+            float: right;
+            margin-top: 1rem;" 
+            href="./offensive-list.json" download >Download</a>
+        <br>
+      <code>
+        {   <br/>
+            &nbsp; "abort" : ["closed", "terminated"],
+            <br/>
+            &nbsp; "not allowed": ["prohibited"],
+            <br/>
+            &nbsp; "bastard": [""],
+            <br/>
+            &nbsp; "fuck": [""],
+            <br/>
+            &nbsp; "suck": [""],
+            <br/>        
+            &nbsp; "pissed off": ["cheesed off", "hacked off", "fed up"],
+            <br/>        
+            &nbsp; "pissed": ["plastered", "sloshed", "blotto"],
+            <br/>        
+            &nbsp; "shagged": ["knackered", "worn out", "whacked"],
+            <br/>        
+            &nbsp; "pissing": ["pouring", "lashing", "bucketing"]
+            <br/>        
+        }   
+      </code>
+     <p></p>
+      </div>
+      <hr>
+      
+    </div>
+    <div class="col-sm-2 sidenav"></div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Developer by: Rahul Lohakare</p>
+  <p>Email: rahullohakare20@gmail.com</p>
+</footer>
+
+</body>
+</html>
